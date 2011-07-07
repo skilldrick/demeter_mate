@@ -4,9 +4,10 @@ DemeterMate
 Introduction
 ------------
 
-DemeterMate gives your ActiveRecord models a way to access association methods
-without violating the Law of Demeter. For example, say a person `has_many`
-projects. If you'd like to find a person's project by id, you'd normally use
+DemeterMate is a Rails 3 plugin that gives your ActiveRecord models a way to
+access association methods without violating the Law of Demeter. For example,
+say a person `has_many` projects. If you'd like to find a person's project by
+id, you'd normally use
 
     @person.projects.find id
 
@@ -60,6 +61,11 @@ Usage
       demeter_mate :projects
     end
 
+
+Installation
+------------
+
+    rails plugin install git@github.com:skilldrick/demeter_mate.git
 
 -----
 
